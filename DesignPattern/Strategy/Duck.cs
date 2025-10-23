@@ -2,8 +2,8 @@
 
 public abstract class Duck
 {
-    private readonly IQuackBehavior _quackBehavior;
-    private readonly IFlyBehavior _flyBehavior;
+    private IQuackBehavior _quackBehavior;
+    private IFlyBehavior _flyBehavior;
 
     public Duck(IQuackBehavior quackBehavior, IFlyBehavior flyBehavior)
     {
@@ -24,5 +24,15 @@ public abstract class Duck
     public static void Swim()
     {
         Console.WriteLine("오리발로 수영 할 수 있어");
+    }
+
+    public void setFlyBehavior(IFlyBehavior fb)
+    {
+        _flyBehavior = fb;
+    }
+
+    public void setQuackBehavior(IQuackBehavior qb)
+    {
+        _quackBehavior = qb;
     }
 }
