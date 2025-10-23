@@ -1,4 +1,6 @@
-﻿namespace DesignPattern;
+﻿using DesignPattern.Strategy;
+
+namespace DesignPattern;
 
 public class RubberDuck : Duck
 {

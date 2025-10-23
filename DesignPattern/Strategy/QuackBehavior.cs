@@ -1,4 +1,4 @@
-﻿namespace DesignPattern;
+﻿namespace DesignPattern.Strategy;
 
 public interface IQuackBehavior
 {
