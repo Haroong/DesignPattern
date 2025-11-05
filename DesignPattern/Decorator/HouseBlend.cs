@@ -4,7 +4,7 @@ public class HouseBlend : Beverage
 {
     public HouseBlend()
     {
-        Description = "House Blend Coffee";
+        _description = "House Blend Coffee";
     }
 
     public override double Cost()

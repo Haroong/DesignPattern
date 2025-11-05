@@ -2,11 +2,22 @@
 
 public abstract class Beverage
 {
-    protected string Description = "Default Beverage";
+    protected string _description = "Default Beverage";
+    private Size _size = Size.Tall;
 
     public virtual string GetDescription()
     {
-        return Description;
+        return _description;
+    }
+
+    public void SetSize(Size size)
+    {
+        _size = size;
+    }
+
+    public Size GetSize()
+    {
+        return _size;
     }
 
     public abstract double Cost();

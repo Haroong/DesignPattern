@@ -9,6 +9,9 @@ public class Mocha(Beverage beverage) : CondimentDecorator(beverage)
 
     public override double Cost()
     {
-        return _beverage.Cost() + 0.20;
+        var cost = _beverage.Cost();
+        if (_beverage.GetSize() == Size.Tall) return cost += 0.10;
+        if (_beverage.GetSize() == Size.Grande) return cost + 0.20;
+        return cost + 0.30;
     }
 }
