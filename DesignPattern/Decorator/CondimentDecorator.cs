@@ -9,5 +9,5 @@ public abstract class CondimentDecorator : Beverage
         _beverage = beverage;
     }
 
-    public abstract string GetDescription();
+    public abstract override string GetDescription();
 }

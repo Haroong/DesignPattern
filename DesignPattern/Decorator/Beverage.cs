@@ -4,7 +4,7 @@ public abstract class Beverage
 {
     protected string Description = "Default Beverage";
 
-    public string GetDescription()
+    public virtual string GetDescription()
     {
         return Description;
     }
