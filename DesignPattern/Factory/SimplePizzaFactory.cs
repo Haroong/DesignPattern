@@ -7,7 +7,7 @@ public class SimplePizzaFactory
 {
     public Pizza CreatePizza(string type)
     {
-        Pizza pizza = null; // TODO 추후 구현
+        Pizza pizza = null;
 
         if (type.Equals("Cheese"))
             pizza = new CheesePizza();
